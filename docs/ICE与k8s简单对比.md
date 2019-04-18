@@ -4,9 +4,8 @@
 
 在分布式技术发展早期，出现过一个基于RPC技术的“伟大的分布式平台”，这个平台的梦想是实现所有语言、所有平台、所有厂商的各种IT系统的分布式互联互通，这就是CORBA，可惜这个由IBM、Sun Microsystems、苹果、微软等IT公司联手发起的伟大创举最终失败。
 
-之后，一些CORBA技术专家聚集在一起，继续沿着CORBA的梦想前进，最终打造出一款优秀的分布式架构基础平台——ZeroC ICE。ICE基于高性能的RPC通信技术，跨语言，跨平台， 拥有杰出的性能。凭借强大的技术实力，ZeroC公司屹立至今，虽然当年的IT霸主SUN早已不在，但ZeroC公司依然因为拥有很多关键领域的大客户而健康成长。同时，ZeroC公司于2005年发布的ICE 3.0首次实现了IceGrid。在现在看来，IceGrid具备了微服务架构平台的所有关键特性，可被认为是第一个公开发行的、支持多语言的、功能完备的微服务架构基础平台，如图所示是IceGrid的完整示意图。
-
-![](.seviceMesh_images\9117083b.png)
+之后，
+![](seviceMesh_images\9117083b.png)
  
 
 从图可以看到，`IceGrid`具备微服务架构的核心特性。
@@ -21,12 +20,12 @@
 总体上，微服务架构平台的核心组成就是上述组件，下图所示为典型的微服务架构平台的结构示意图。
  
 
-![](.seviceMesh_images\3821c492.png)
+![](seviceMesh_images\3821c492.png)
  
 
 在IceGrid之后，比较有影响力的开源微服务架构框架有`Dubbo`与 `Spring Cloud`，两者都是Java语言体系内的微服务框架，并不支持其他语言。与IceGrid相比，其完备性还达不到平台（Platform）的高度，目前只能被称为框架（Framework）。下表给出了Dubbo 与Spring Cloud的主要功能对比。
 
-![](.seviceMesh_images\ba27323e.png) 
+![](seviceMesh_images\ba27323e.png) 
 
  
 `Spring Cloud`相对而言更加全面，开源更有保障，同时开创性地实现了微服务架构框架中诸如断路器、流量仪表板、服务网关等特性，同时提供了在分布式开发中所需的很多基础组件（API），例如配置管理、全局锁、分布式会话和集群状态管理等。Spring Cloud的核心是原来在 Netflix 公司内部广泛使用、经过实践考验、非常成熟的微服务框架——Netflix OSS，所以，Spring Cloud一度吸引了很多人的眼球。
@@ -35,9 +34,9 @@
 
 在Spring Cloud之后成功的微服务架构基本都与容器技术挂钩了，其中最成功、影响也最大的当属Kubernetes平台了，与之相似的还有Docker公司推出的Docker Swarm（在2017年年底，Docker Swarm 也支持Kubernetes了）。
 
-![](.seviceMesh_images\540cc74f.png)
+![](seviceMesh_images\540cc74f.png)
 
-![](.seviceMesh_images\18d2910e.png)
+![](seviceMesh_images\18d2910e.png)
 
 
 对比Kubernetes与IceGrid，我们会发现两者有很多相似性。
